@@ -16,7 +16,36 @@ class ResourcesEngine {
         badge: "24/7 Universal"
       },
       {
-        name: "Women Helpline (National Commission for Women)",
+        name: "Police Helpline",
+        number: "100",
+        category: "Emergency & Police",
+        desc: "Direct line to local police for immediate help. Also used by Telangana's SHE Teams.",
+        actionUrl: "tel:100",
+        actionText: "📞 Call 100",
+        badge: "24/7"
+      },
+      {
+        name: "Tele-MANAS (Govt. of India Mental Health Helpline)",
+        number: "14416 / 1800-891-4416",
+        category: "Mental Health & Trauma",
+        desc: "Free 24/7 counselling and emotional support in around 20 languages, run by the Ministry of Health.",
+        actionUrl: "tel:14416",
+        actionText: "📞 Call 14416",
+        portalUrl: "https://telemanas.mohfw.gov.in",
+        portalText: "Visit Portal",
+        badge: "24/7 Toll-Free"
+      },
+      {
+        name: "Childline",
+        number: "1098",
+        category: "Child Safety",
+        desc: "Free emergency helpline for children in distress or abuse, including minors facing harassment.",
+        actionUrl: "tel:1098",
+        actionText: "📞 Call 1098",
+        badge: "24/7 Toll-Free"
+      },
+      {
+        name: "Women Helpline (police)",
         number: "1091",
         category: "Women's Safety",
         desc: "Dedicated rapid response for women in distress or immediate safety threats.",
