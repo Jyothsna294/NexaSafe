@@ -7,8 +7,8 @@ class ContactsEngine {
   constructor() {
     this.storageKey = 'nexasafe_trusted_contacts';
     this.sampleContacts = [
-      { id: "sc-1", name: "Ananya Sharma", relation: "Sister / Roommate", phone: "+91 98765 43210", isSample: true },
-      { id: "sc-2", name: "Sunita (Mom)", relation: "Mother", phone: "+91 98111 22334", isSample: true }
+      { id: "sc-1", name: "Jyothi", relation: "Sister", phone: "+91 8919757241", isSample: true },
+      { id: "sc-2", name: "Santhosha", relation: "Mother", phone: "+91 9346254477", isSample: true }
     ];
     this.contacts = [];
     this.init();
