@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e1065" />
+      <stop offset="50%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#5b21b6" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="50%" stop-color="#6d28d9" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="#ddd6fe" stroke-width="6" opacity="0.4" />
+
+  <!-- Outer Shield -->
+  <path d="M256 68 C350 114 400 134 400 244 C400 344 330 414 256 452 C182 414 112 344 112 244 C112 134 162 114 256 68 Z" 
+        fill="url(#shieldGrad)" />
+
+  <!-- Shield Inner Border -->
+  <path d="M256 98 C332 136 372 154 372 244 C372 326 314 384 256 418 C198 384 140 326 140 244 C140 154 180 136 256 98 Z" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="7" 
+        opacity="0.9" />
+
+  <!-- Stylized Woman / Guardian Figure -->
+  <circle cx="256" cy="205" r="42" fill="#ffffff" />
+  <path d="M192 326 C192 276 222 254 256 254 C290 254 320 276 320 326 Z" fill="#ffffff" />
+
+  <!-- Teal Security Checkmark & Star of Protection -->
+  <circle cx="360" cy="148" r="22" fill="url(#tealGrad)" stroke="#ffffff" stroke-width="4" />
+  <path d="M350 148 L357 155 L372 140" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
