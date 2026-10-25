@@ -110,29 +110,3 @@ class SOSEngine {
 
 // Global instance
 window.sosEngine = new SOSEngine();
-// Gets the user's location as a Google Maps link (or null if denied)
-function getLocationLink() {
-  return new Promise((resolve) => {
-    if (!navigator.geolocation) return resolve(null);
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        const { latitude, longitude } = pos.coords;
-        resolve(https://maps.google.com/?q=${latitude},${longitude});
-      },
-      () => resolve(null), // user denied or location failed
-      { enableHighAccuracy: true, timeout: 8000, maximumAge: 0 }
-    );
-  });
-}
-
-// Builds a WhatsApp link with the emergency message and location
-async function buildWhatsAppLink(phone, locationLink) {
-  let number = phone.replace(/\D/g, '');
-  if (number.length === 10) number = '91' + number; // add India code
-
-  const message = locationLink
-    ? 🚨 EMERGENCY! I need help. My location: ${locationLink}
-    : 🚨 EMERGENCY! I need help. (My location could not be shared);
-
-  return https://wa.me/${number}?text=${encodeURIComponent(message)};
-}
